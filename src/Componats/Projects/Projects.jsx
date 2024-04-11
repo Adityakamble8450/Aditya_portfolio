@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ProjectData } from "../../lib/ProjectData";
-import ProjectsCard from "./ProjectsCard";
+// import ProjectsCard from "./ProjectsCard";
+import ThreeDCardDemo from "./ProjectsCard";
 import { Link } from "react-router-dom";
 import { buttonVariants } from "../Button";
 const Projects = () => {
+  useEffect(() => {
+    Shery.makeMagnet(".magnet-target", {
+      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+      duration: 1,
+    });
+  }, []);
+
   return (
     <div className="p-5">
       <section className="flex flex-col text-left justify-between pt-8 relative my-14">
@@ -16,17 +24,16 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 gap-12 md:gap-5 md:grid-cols-3 items-start">
           {ProjectData.slice(0, 3).map((Project, idx) => (
-            <ProjectsCard key={idx} Project={Project} />
+            <ThreeDCardDemo key={idx} Project={Project} />
           ))}
         </div>
         <div className="relative w-full mt-12 flex  justify-center items-center">
-          <Link 
+          <Link
             className={buttonVariants({
               variant: "outline",
               rounded: "full",
-              class: "w-[70%]",
-              
-            }) }
+              class: "w-[70%] ",
+            })}
             to={"/projects"}
           >
             {" "}

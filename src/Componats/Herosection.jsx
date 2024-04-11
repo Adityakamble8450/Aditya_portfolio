@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "./Button"; // Import Button component from ui/button.js
 import findLinkByName from "../lib/Data"; // Import findLinkByName function from Data.js
 import resunme from '../../public/RESUME-Aditya.pdf'
@@ -17,12 +17,21 @@ import Contact from "./Contact/Contact";
 // import './HeroSection.css'; // Import CSS file for styling
 
 const HeroSection = () => {
+
+   useEffect(() => {
+    Shery.makeMagnet(".magnet-target", {
+      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+      duration: 1,
+    });
+   }, [])
+   
+
   return (
     <div className="w-full  min-h-screen ">
     <section className="flex justify-center relative w-full m-auto flex-col text-center items-center h-[calc(100vh-80px)] pt-20 pb-40">
 
-      <h1 className="text-xl text-white mb-5">Hey, I'm Aditya.</h1>
-      <p className="inline-block text-[white] max-w-2xl lg:max-w-4xl w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold">
+      <h1 className="text-xl text-target text-white mb-5">Hey, I'm Aditya.</h1>
+      <p className="inline-block text-target text-[white] max-w-2xl lg:max-w-4xl w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold">
         Turning <span className="text-primary">Ideas</span> into seamless web{" "}
         <span className="text-primary">realities</span>.
       </p>
@@ -31,7 +40,7 @@ const HeroSection = () => {
         <Button
           variant="outline"
           size="lg"
-          className="w-[190px]"
+          className="w-[190px] magnet-target"
           rounded="full"
         //   href="#contact"
         >
@@ -42,7 +51,7 @@ const HeroSection = () => {
           className={buttonVariants({
             variant: "outline",
             size: "lg",
-            class: "w-[130px] max-md:hidden gap-2",
+            class: "w-[130px] magnet-target max-md:hidden gap-2",
             rounded: "full",
           })}
           target="_blank"
@@ -81,7 +90,7 @@ const HeroSection = () => {
       </div>
       <a
         href="#learnmore"
-        className="absolute group animate-float duration-1000 hover:animation-pause transition-all cursor-pointer flex flex-col justify-center border-input bottom-12 rounded-full"
+        className="absolute group animate-float duration-1000 hover:animation-pause transition-all cursor-pointer flex flex-col justify-center border-input bottom-12 rounded-full "
       >
         <MouseIcon style={{ scale: 0.7 }}  />
       </a>

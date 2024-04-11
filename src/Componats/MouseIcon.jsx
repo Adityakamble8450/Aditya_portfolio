@@ -2,7 +2,7 @@ import React from "react";
 
 const MouseIcon = (props) => (
   <svg
-  className="animate-bounce"
+  // className="animate-bounce"
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     width={25.606}

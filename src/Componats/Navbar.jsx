@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "./Styles/Logo";
 // import { Links } from '/src/lib/Data.jsx'
 import { Links } from "../lib/Data";
@@ -6,24 +6,35 @@ import { Links } from "../lib/Data";
 
 import NavLink from "./NavLink";
 import { sourceCodeLink } from "../lib/Data";
-import ThemeSwitch from "./ThemSwitch/ThemSwitch";
+
 
 import AudioToggel from "./AoudioToggel";
 import MobileMenu from "./Mobilemenu";
 
 const Navbar = () => {
+    useEffect(() => {
+      Shery.makeMagnet(".magnet-target", {
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+      });
+    }, []);
+  
+
   return (
     <div>
       <nav className="flex h-[80px] items-center justify-between mx-auto max-w-[1400px] px-5 md:px-14">
         <ul>
-          <li className="list-none font-bold text-lg cursor-pointer">
+          <li className="list-none    font-bold text-lg cursor-pointer">
             <Logo />
           </li>
         </ul>
         <ul className="flex items-center space-x-10 max-md:hidden">
           {Links.map((item, index) => {
             return (
-              <li key={index} className={`list-none text-gray-500`}>
+              <li
+                key={index}
+                className={`list-none magnet-target text-gray-500`}
+              >
                 <NavLink
                   className=" hover:text-[white] nav-link relative py-1"
                   activeClassName=" text-[white]"
@@ -36,7 +47,7 @@ const Navbar = () => {
           })}
           <li className=" flex items-center gap-2">
             <AudioToggel />
-            <ThemeSwitch />
+         
             <a href={sourceCodeLink} target="_blank">
               <img
                 className=" text-primary w-[24px] h-[24px] cursor-pointer"
