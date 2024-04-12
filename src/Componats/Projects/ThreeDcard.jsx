@@ -1,6 +1,12 @@
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-import React, { createContext, useState, useContext, useRef, useEffect } from "react";
+import React, {
+  createContext,
+  useState,
+  useContext,
+  useRef,
+  useEffect,
+} from "react";
 
 const MouseEnterContext = createContext();
 
@@ -14,7 +20,8 @@ export const CardContainer = ({ children, className, containerClassName }) => {
 
   const handleMouseMove = (e) => {
     if (!containerRef.current) return;
-    const { left, top, width, height } = containerRef.current.getBoundingClientRect();
+    const { left, top, width, height } =
+      containerRef.current.getBoundingClientRect();
     const x = (e.clientX - left - width / 2) / 25;
     const y = (e.clientY - top - height / 2) / 25;
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
@@ -35,7 +42,7 @@ export const CardContainer = ({ children, className, containerClassName }) => {
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20 flex items-center justify-center",
+          "py-10 flex items-center justify-center",
           containerClassName
         )}
         style={{

@@ -6,9 +6,7 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 export default function ThreeDCardDemo({ Project }) {
 
   
-    
- 
- 
+
   return (
     <CardContainer className="inter-var ">
       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] h-auto rounded-xl p-6 border">
@@ -27,7 +25,7 @@ export default function ThreeDCardDemo({ Project }) {
         >
           {Project.description}
         </CardItem>
-        <CardItem translateZ="100" className="w-full  mt-4">
+        <CardItem translateZ="100" className="w-full  mt-3">
           <a
             href={Project.LiveLink || Project.githibLink || "/"}
             target="_blank"
@@ -41,7 +39,7 @@ export default function ThreeDCardDemo({ Project }) {
             />
           </a>
         </CardItem>
-        <div className="flex justify-between items-center mt-20">
+        <div className="flex justify-between items-center sm:mt-17 md:mt-20">
           <CardItem
             translateZ={20}
             target="__blank"
