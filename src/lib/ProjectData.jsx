@@ -2,7 +2,7 @@ import notFound from '/public/projects/NotFound.jpeg'
 
 export const ProjectData = [
   {
-    imgUrl: "/public/projects/image-project.png",
+    imgUrl: "/projects/image-project.png",
     titel: "Image searching App",
     description: "A Google Pixel clone with Image save functionality",
     LiveLink: "https://master--idyllic-cactus-0e63da.netlify.app/",

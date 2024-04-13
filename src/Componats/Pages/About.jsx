@@ -21,7 +21,7 @@ const AboutUs = () => {
       <div className="max-w-[30vw]  h-[35vw]   bg-zinc-500  mx-auto m-4 overflow-hidden  rounded-lg">
         <img
           className=" h-full w-full object-cover   inline-block"
-          src="/public/Aditya1.jpg"
+          src="/Aditya1.jpg"
           alt=""
         />
         {/* <img src="/public/Aditya2.jpg" alt="" />

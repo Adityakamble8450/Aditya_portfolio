@@ -4,25 +4,25 @@ const SocialLinks = [
   {
     name: "GitHub",
     link: "https://github.com/Adityakamble8450",
-    icon: "../../public/Icons/github-f.svg",
+    icon: "/Icons/github-f.svg",
     leavesWebsite: true,
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/aditya-kamble-651400248/",
-    icon: "../../public/Icons/linkedin-f.svg",
+    icon: "/Icons/linkedin-f.svg",
     leavesWebsite: true,
   },
   {
     name: "Twitter",
     link: "https://twitter.com/Aditya4902",
-    icon: "../../public/Icons/Twitter.svg",
+    icon: "/Icons/Twitter.svg",
     leavesWebsite: true,
   },
   {
     name: "Email",
     link: "adityakamble9245@gmail.com",
-    icon: "../../public/Icons/mail-f.svg",
+    icon: "/Icons/mail-f.svg",
     leavesWebsite: true,
   },
 ];
