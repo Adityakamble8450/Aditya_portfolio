@@ -6,6 +6,7 @@ import Herosection from "./Componats/Herosection";
 import Footer from "./Componats/Footer/Footer";
 import ProjectPage from "./Componats/Pages/ProjectPage";
 import LocomotiveScroll from "locomotive-scroll";
+import AboutUs from "./Componats/Pages/About";
 
 const App = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Herosection />} />
           <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/about"  element={<AboutUs/>}/>
         </Routes>
         <Footer />
       </div>

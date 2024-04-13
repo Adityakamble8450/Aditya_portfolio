@@ -60,6 +60,10 @@ export const Links = [
     title: "Projects",
     path: "/projects",
   },
+  {
+    title: "About me",
+    path: "/about",
+  },
 ];
 
 export default function findLinkByName(name) {

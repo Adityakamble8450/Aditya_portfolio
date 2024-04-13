@@ -41,6 +41,7 @@ const MobileMenu = () => {
                 Home
               </NavLink>
             </li>
+         
             <li
               className={`list-none  mt-4  w-full flex  justify-center text-gray-500`}
             >
@@ -55,7 +56,21 @@ const MobileMenu = () => {
                 Projects
               </NavLink>
             </li>
-          </ul>
+            <li
+              className={`list-none  mt-4  w-full flex  justify-center text-gray-500`}
+            >
+              <NavLink
+                className=" hover:text-foreground text-white text-2xl nav-link relative py-1"
+                activeClassName=" text-foreground"
+                to={"/about"}
+                onClick={() => {
+                  setopen(false);
+                }}
+              >
+                About me
+              </NavLink>
+            </li>
+            </ul>
           <ul className=" pb-5">
             <li className=" flex items-center gap-2">
               <AudioToggel />
