@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-
+import { buttonVariants } from "./Button";
+import resunme from "../../public/RESUME-Aditya.pdf";
 // import NavLink from "./NavLink";
 import NavLink from "./NavLink";
 import AudioToggel from "./AoudioToggel";
 // import ThemeSwitch from "./ThemeSwich";
 // import { routes } from "@/lib/Data";
+import {
+  AiOutlineDownload,
+} from "react-icons/ai";
 
 const MobileMenu = () => {
   const [opened, setopen] = useState(false);
@@ -41,7 +45,7 @@ const MobileMenu = () => {
                 Home
               </NavLink>
             </li>
-         
+
             <li
               className={`list-none  mt-4  w-full flex  justify-center text-gray-500`}
             >
@@ -70,7 +74,27 @@ const MobileMenu = () => {
                 About me
               </NavLink>
             </li>
-            </ul>
+            <li
+              className={`list-none  mt-4  w-full flex  justify-center text-gray-500`}
+            >
+              <a
+                className={buttonVariants({
+                  variant: "outline",
+                  size: "lg",
+                  class: "w-[130px] magnet-target  gap-2",
+                  rounded: "full",
+                })}
+                target="_blank"
+                href={resunme}
+                // onClick={() => {
+                //   setopen(false);
+                // }}
+              >
+                CV
+                <AiOutlineDownload size={16} />
+              </a>
+            </li>
+          </ul>
           <ul className=" pb-5">
             <li className=" flex items-center gap-2">
               <AudioToggel />

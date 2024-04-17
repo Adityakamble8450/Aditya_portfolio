@@ -55,7 +55,7 @@ const Navbar = () => {
                 loading="lazy"
                 width={24}
                 height={24}
-                src="../../public/Icons/github.svg"
+                src="/Icons/github.svg"
               />
               <span className=" sr-only">Source Code</span>
             </a>

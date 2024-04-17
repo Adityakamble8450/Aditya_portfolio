@@ -11,6 +11,16 @@
   font-style: normal;
 }
 
+@media screen and (max-width: 768px) {
+  /* Hide the mouse follower */
+  .mouse-follower {
+    display: none;
+  }
+}
+
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
