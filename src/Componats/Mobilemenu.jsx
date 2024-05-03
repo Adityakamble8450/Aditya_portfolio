@@ -8,9 +8,7 @@ import NavLink from "./NavLink";
 import AudioToggel from "./AoudioToggel";
 // import ThemeSwitch from "./ThemeSwich";
 // import { routes } from "@/lib/Data";
-import {
-  AiOutlineDownload,
-} from "react-icons/ai";
+import { AiOutlineDownload } from "react-icons/ai";
 
 const MobileMenu = () => {
   const [opened, setopen] = useState(false);

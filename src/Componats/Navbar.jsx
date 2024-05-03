@@ -7,18 +7,16 @@ import { Links } from "../lib/Data";
 import NavLink from "./NavLink";
 import { sourceCodeLink } from "../lib/Data";
 
-
 import AudioToggel from "./AoudioToggel";
 import MobileMenu from "./Mobilemenu";
 
 const Navbar = () => {
-    useEffect(() => {
-      Shery.makeMagnet(".magnet-target", {
-        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-        duration: 1,
-      });
-    }, []);
-  
+  useEffect(() => {
+    Shery.makeMagnet(".magnet-target", {
+      ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+      duration: 1,
+    });
+  }, []);
 
   return (
     <div>
@@ -47,7 +45,7 @@ const Navbar = () => {
           })}
           <li className=" flex items-center gap-2">
             <AudioToggel />
-         
+
             <a href={sourceCodeLink} target="_blank">
               <img
                 className=" text-primary w-[24px] h-[24px] cursor-pointer"

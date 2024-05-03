@@ -1,4 +1,4 @@
-import notFound from '/public/projects/NotFound.jpeg'
+import notFound from '/projects/NotFound.jpeg'
 
 export const ProjectData = [
   {
@@ -10,11 +10,20 @@ export const ProjectData = [
     Skills: ["React , Taiwindcss , Axios , API"],
   },
   {
+    imgUrl: '/projects/web-ui.png',
+    titel: "Website Ui",
+    description:
+      "A simple Website Ui using react",
+    LiveLink: "https://website-responsive-ui-react.vercel.app/",
+    githibLink: "https://github.com/Adityakamble8450/Website-UI-using-react.git",
+    Skills: ["React , CSS , Tailwind CSS ,"],
+  },
+  {
     imgUrl: notFound,
     titel: "Aditya Kamble",
     description:
       "Coming Soon: Exciting New Project!",
-    LiveLink: "https://popcornboxx.vercel.app/",
+    LiveLink: "https://",
     githibLink: "https://github.com/Adityakamble8450",
     Skills: ["React , Taiwindcss , Axios , Redux"],
   },
@@ -23,7 +32,7 @@ export const ProjectData = [
     titel: "Aditya Kamble",
     description:
       "Coming Soon: Exciting New Project!",
-    LiveLink: "https://popcornboxx.vercel.app/",
+    LiveLink: "https://",
     githibLink: "https://github.com/Adityakamble8450",
     Skills: ["React , Taiwindcss , Axios , Redux"],
   },
@@ -32,7 +41,7 @@ export const ProjectData = [
     titel: "Aditya Kamble",
     description:
       "Coming Soon: Exciting New Project!",
-    LiveLink: "https://popcornboxx.vercel.app/",
+    LiveLink: "https://",
     githibLink: "https://github.com/Adityakamble8450",
     Skills: ["React , Taiwindcss , Axios , Redux"],
   },
@@ -41,7 +50,7 @@ export const ProjectData = [
     titel: "Aditya Kamble",
     description:
       "Coming Soon: Exciting New Project!",
-    LiveLink: "https://popcornboxx.vercel.app/",
+    LiveLink: "https://",
     githibLink: "https://github.com/Adityakamble8450",
     Skills: ["React , Taiwindcss , Axios , Redux"],
   },
@@ -50,16 +59,7 @@ export const ProjectData = [
     titel: "Aditya Kamble",
     description:
       "Coming Soon: Exciting New Project!",
-    LiveLink: "https://popcornboxx.vercel.app/",
-    githibLink: "https://github.com/Adityakamble8450",
-    Skills: ["React , Taiwindcss , Axios , Redux"],
-  },
-  {
-    imgUrl: notFound,
-    titel: "Aditya Kamble",
-    description:
-      "Coming Soon: Exciting New Project!",
-    LiveLink: "https://popcornboxx.vercel.app/",
+    LiveLink: "https://",
     githibLink: "https://github.com/Adityakamble8450",
     Skills: ["React , Taiwindcss , Axios , Redux"],
   },
