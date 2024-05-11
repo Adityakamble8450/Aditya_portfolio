@@ -10,6 +10,7 @@ import Nextjs from '/Skillsicon/Nextjs.png'
 import gitgub from '/Skillsicon/github.png'
 import python from '/Skillsicon/python.png'
 
+
 export const skillsData = [
     {
         link : Css,
@@ -59,6 +60,11 @@ export const skillsData = [
     {
         link : gitgub,
         Name : "github"
+
+    },
+    {
+        link : "/Skillsicon/redux.png",
+        Name : "Redux"
 
     },
     {
