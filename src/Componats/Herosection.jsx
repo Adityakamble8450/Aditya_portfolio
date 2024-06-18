@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Button from "./Button"; // Import Button component from ui/button.js
 import findLinkByName from "../lib/Data"; // Import findLinkByName function from Data.js
-import resunme from '../../public/RESUME-Aditya.pdf'
+import resunme from '/RESUME-Aditya.pdf'
 import { Link } from "react-router-dom";
 import {
   AiFillGithub,
