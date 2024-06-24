@@ -19,7 +19,7 @@ const SkillsCard = ({ skill }) => {
           alt={skill.Name}
           className={` w-[40px] magnet-target  h-[40px]`}
         />
-        <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
+        <p className="text-xs text-white font-bold mt-3 opacity-80">
           {skill.Name}
         </p>
       </div>
