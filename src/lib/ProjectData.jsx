@@ -11,6 +11,15 @@ export const ProjectData = [
     githibLink: "https://github.com/Adityakamble8450/codepen_clone.git",
     Skills: ["React , Taiwindcss , Material Ui , codeMirror"],
   },
+  {
+    imgUrl:`/projects/file.png`,
+    titel: "File shearing Application",
+    description:
+      " allows users to upload files and generate download links, facilitating easy file sharing",
+    LiveLink: "https://file-shearing-application-frontend.onrender.com",
+    githibLink: "https://github.com/Adityakamble8450/File-Shearing-application-.git",
+    Skills: ["React , Express , NodeJS , MongoDB" ,"Tailwind CSS"],
+  },
 
   {
     imgUrl: "/projects/image-project.png",
@@ -39,15 +48,7 @@ export const ProjectData = [
     githibLink: "https://github.com/Adityakamble8450",
     Skills: ["React , Taiwindcss , Axios , Redux"],
   },
-  {
-    imgUrl: notFound,
-    titel: "Aditya Kamble",
-    description:
-      "Coming Soon: Exciting New Project!",
-    LiveLink: "https://",
-    githibLink: "https://github.com/Adityakamble8450",
-    Skills: ["React , Taiwindcss , Axios , Redux"],
-  },
+ 
   {
     imgUrl: notFound,
     titel: "Aditya Kamble",
