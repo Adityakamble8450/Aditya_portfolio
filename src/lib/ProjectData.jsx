@@ -12,6 +12,15 @@ export const ProjectData = [
     Skills: ["React , Taiwindcss , Material Ui , codeMirror"],
   },
   {
+    imgUrl: '/projects/live.png',
+    titel: "Real time location tracker",
+    description:
+      "Real time location tracker is track your live location",
+    LiveLink: "https://real-time-tracker-8dbu.onrender.com/",
+    githibLink: "https://github.com/Adityakamble8450/real_Time_Tracker.git",
+    Skills: ["NodeJs , ExpressJs , Ejs, Socket.io , javaScript"],
+  },
+  {
     imgUrl:`/projects/file.png`,
     titel: "File shearing Application",
     description:
