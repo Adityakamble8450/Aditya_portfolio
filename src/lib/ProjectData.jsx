@@ -3,6 +3,16 @@ import notFound from '/projects/NotFound.jpeg'
 export const ProjectData = [
 
   {
+    imgUrl: '/projects/postman.png',
+    titel: "Postman Clone",
+    description:
+      "Developed a Postman clone using React, Tailwind CSS, and Axios for streamlined API testing and management.",
+    LiveLink: "https://my-postmanclone.vercel.app/",
+    githibLink: "https://github.com/Adityakamble8450/my_Postmanclone.git",
+    Skills: ["React , Taiwindcss , Material Ui , Axios"],
+  },
+
+  {
     imgUrl: '/projects/codepenSS.png',
     titel: "Codepen Clone",
     description:
