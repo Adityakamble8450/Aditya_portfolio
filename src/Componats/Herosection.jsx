@@ -3,6 +3,7 @@ import Button from "./Button"; // Import Button component from ui/button.js
 import findLinkByName from "../lib/Data"; // Import findLinkByName function from Data.js
 import resunme from '/RESUME-Aditya.pdf'
 import { Link } from "react-router-dom";
+// import Three from "./Three";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -28,6 +29,8 @@ const HeroSection = () => {
    
 
   return (
+    <>
+  
     <div className="w-full  min-h-screen ">
     <section className="flex justify-center relative w-full m-auto flex-col text-center items-center h-[calc(100vh-80px)] pt-20 pb-40">
 
@@ -105,6 +108,7 @@ const HeroSection = () => {
 
 
     </div>
+    </>
 
 
   );

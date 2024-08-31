@@ -3,6 +3,15 @@ import notFound from '/projects/NotFound.jpeg'
 export const ProjectData = [
 
   {
+    imgUrl: '/projects/3d-model.png', 
+    titel: "3D Object Model",
+    description:
+      " This project showcases a rotating cylindrical display demonstrating advanced 3D rendering and animation techniques in web applications.",
+    LiveLink: "https://3-d-object-model.vercel.app/",
+    githibLink: "https://github.com/Adityakamble8450/3D-object-model.git",
+    Skills: ["React", "Three.js", "React Three Fiber", "Tailwind CSS"],
+  },
+  {
     imgUrl: '/projects/postman.png',
     titel: "Postman Clone",
     description:
