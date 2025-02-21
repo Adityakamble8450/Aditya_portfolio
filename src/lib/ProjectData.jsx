@@ -3,6 +3,15 @@ import notFound from '/projects/NotFound.jpeg'
 export const ProjectData = [
 
   {
+    imgUrl: '/projects/codereviewer.png', 
+    titel: "AI-Powered Code Reviewer",
+    description:
+      "Developed an intelligent code review system using Node.js and Google's Gemini AI to analyze, optimize, and improve code quality with structured feedback on best practices, performance, and security.",
+    LiveLink: "https://ai-powered-code-reviewer-1-fw7m.onrender.com/",
+    githibLink: "https://github.com/Adityakamble8450/Ai-powered-code-Reviewer-.git",
+    Skills: ["React", "Express.js", "Google Gimini Ai", "Tailwind CSS"],
+  },
+  {
     imgUrl: '/projects/3d-model.png', 
     titel: "3D Object Model",
     description:
