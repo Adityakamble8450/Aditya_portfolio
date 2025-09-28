@@ -16,7 +16,7 @@ import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Contact from "./Contact/Contact";
 import Eyes from "./Eyes";
-// import './HeroSection.css'; // Import CSS file for styling
+// import './HeroSection.css'; // Import CSS file
 
 const HeroSection = () => {
 
