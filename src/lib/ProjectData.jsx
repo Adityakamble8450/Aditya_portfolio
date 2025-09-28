@@ -1,6 +1,15 @@
 import notFound from '/projects/NotFound.jpeg'
 
 export const ProjectData = [
+  {
+    imgUrl: '/projects/snackshot.png', 
+    titel: "SnackShot",
+    description:
+      "A MERN stack web platform where food partners (restaurants/hotels) can promote their business by uploading engaging food reels. Users can explore, like, and save reels, enabling better food discovery and engagement. Built with React, Tailwind CSS, Express.js, MongoDB, and secured authentication using JWT & bcrypt. Deployed on Render with role-based access for users and food partners.",
+    LiveLink: "https://snackshot-2-dqh3.onrender.com/",
+    githibLink: "....",
+    Skills: ["React", "Express.js", "MongoDB", "Tailwind CSS" , "Nodejs"],
+  },
 
   {
     imgUrl: '/projects/codereviewer.png', 
